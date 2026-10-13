@@ -34,6 +34,14 @@ h2{font-size:28px;margin:0 0 6px;color:var(--logo)}
 .card h3{margin:0 0 6px;font-size:20px;color:var(--logo)}
 .card p{margin:0;font-size:14px}
 .feat{border:2px solid var(--ouro);margin-bottom:0}
+.tgrid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.tcard{background:var(--card);border-radius:18px;padding:22px;border:1px solid rgba(138,27,79,.15);position:relative}
+.tcard::before{content:"\201C";font-family:'Playfair Display',Georgia,serif;font-size:56px;line-height:1;color:var(--ouro);position:absolute;top:8px;left:16px}
+.tcard p{margin:22px 0 14px;font-size:14px}
+.tcard .who{font-weight:600;color:var(--logo);font-size:14px;margin:0}
+.tcard .ctx{font-size:12px;opacity:.75;margin:2px 0 0}
+.tfeat{grid-column:1/-1;border:2px solid var(--ouro)}
+details summary{cursor:pointer;color:var(--logo);font-weight:600;font-size:13px;margin-bottom:8px}
 .num{color:var(--ouro);font-family:'Playfair Display',serif;font-size:30px}
 .about{background:var(--card);border-radius:24px;padding:28px 24px;border-left:5px solid var(--ouro)}
 .cta{text-align:center;background:var(--bordo);color:#fff;border-radius:24px;padding:40px 20px}
@@ -106,6 +114,28 @@ footer{text-align:center;font-size:12px;padding:28px 0 90px;opacity:.8}
     <div class="card"><div class="num">1</div><h3>Conversa</h3><p>Você me chama no WhatsApp e conta seu sonho.</p></div>
     <div class="card"><div class="num">2</div><h3>Plano</h3><p>Montamos juntas o melhor caminho para você.</p></div>
     <div class="card"><div class="num">3</div><h3>Embarque</h3><p>Acompanho você até a hora de atravessar a fronteira.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>O que dizem as clientes</h2>
+  <p class="sub">Histórias reais de quem já viajou comigo.</p>
+  <div class="tgrid">
+    <div class="tcard tfeat">
+      <p>Em 2023, fiz um intercâmbio para Londres, na Inglaterra. Era minha primeira viagem internacional e, para completar, fui sozinha. Por isso, procurei a Geisla para me auxiliar com as passagens e a hospedagem. Porém, ela fez muito mais do que isso: me ofereceu todo o apoio e a assistência de que eu precisava naquele momento.</p>
+      <details><summary>Ler depoimento completo</summary>
+      <p style="margin-top:0">A Geisla me orientou em cada etapa, deu dicas valiosas e me ajudou com toda a parte burocrática, que eu não sabia como organizar. Sua ajuda foi essencial para que minha viagem acontecesse da melhor forma possível. Ela conseguiu antecipar possíveis dificuldades e me orientou sobre como lidar com cada situação, transmitindo muito mais segurança e tranquilidade durante todo o processo.</p>
+      <p style="margin-top:0">Mesmo depois da minha chegada a Londres, ela continuou sempre disponível e atenciosa, compartilhando dicas importantes que fizeram toda a diferença na minha experiência.</p>
+      <p style="margin-top:0">Um dos momentos que mais me fizeram perceber a importância do seu trabalho foi quando precisei utilizar o seguro-viagem logo no início da viagem. Eu já havia ouvido pessoas dizerem que não era necessário contratar esse serviço, mas a Geisla me explicou a importância de estar preparada para imprevistos. E foi justamente quando menos esperava que precisei utilizá-lo!</p>
+      <p style="margin-top:0">Sem dúvidas, contar com a Geisla foi uma das melhores escolhas que fiz para essa aventura. Indico seu trabalho de olhos fechados, pois sei que ela faz tudo com muito carinho, dedicação e responsabilidade, como se estivesse cuidando da própria viagem. É uma profissional extremamente atenciosa, competente e comprometida com o bem-estar de seus clientes.</p>
+      <p style="margin-top:0">Sou muito grata por todo o apoio e cuidado que recebi. Ter alguém de confiança ao meu lado, mesmo estando tão longe de casa, fez toda a diferença!</p>
+      </details>
+      <p class="who">Nathaly</p><p class="ctx">Intercâmbio em Londres, 2023</p>
+    </div>
+    <div class="tcard"><p>Eu e minha família voamos pela primeira vez rumo a Recife, para conhecer Porto de Galinhas, Maragogi e Maceió, e foi a melhor experiência. Tudo muito organizado. Me senti segura, fomos muito bem orientados de como seria a viagem, aonde iríamos, quem iria levar a gente até o lugar para pegar nosso carro alugado. Foi tudo perfeito… Estamos ansiosos pela próxima.</p><p class="who">Andressa</p><p class="ctx">Recife, Porto de Galinhas, Maragogi e Maceió</p></div>
+    <div class="tcard"><p>Foi uma experiência maravilhosa ter você cuidando da minha viagem! Desde o primeiro contato, você foi extremamente atenciosa, carinhosa e cuidadosa com cada detalhe, fazendo com que eu me sentisse segura e tranquila em todos os momentos. Sou muito grata por todo o carinho e dedicação e, sem dúvida, recomendo de coração a Geisla Travel. Tenho certeza de que será um grande sucesso!</p><p class="who">Ana</p><p class="ctx">Cliente Geisla Travel</p></div>
+    <div class="tcard"><p>O carinho e cuidado que a Geisla teve comigo e com a minha família, além do valor ser o melhor, tivemos uma experiência muito boa em relação às escalas.</p><p class="who">Fran</p><p class="ctx">Viagem em família</p></div>
+    <div class="tcard"><p>Suporte e atenção, agilidade, roteiro organizado, disponibilidade de atendimento. Tudo isso descreve a Geisla Travel. Graças a ela, a minha viagem foi sensacional e com segurança.</p><p class="who">Carol</p><p class="ctx">Cliente Geisla Travel</p></div>
   </div>
 </section>
 
